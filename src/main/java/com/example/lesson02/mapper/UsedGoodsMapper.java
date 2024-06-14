@@ -9,7 +9,9 @@ import com.example.lesson02.domain.UsedGoods;
 @Mapper
 public interface UsedGoodsMapper {
 
-	// input: (BO로부터 받아옴) X
-	// output: (BO한테 즌달)List<UsedGoods>
+	// input: (BO로부터 받는 것) X
+	// output: (BO한테 줄 것) List<UsedGoods>
 	public List<UsedGoods> selectUsedGoodsList();
 }
+
+
