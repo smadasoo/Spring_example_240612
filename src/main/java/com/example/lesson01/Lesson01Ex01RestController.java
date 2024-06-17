@@ -11,13 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/lesson01/ex01")
 @RestController // @Controller + @ResponseBody, spring bean
 public class Lesson01Ex01RestController {
-	//	Request -> Response
-	//	@Controller + @ResponseBody => return String => Html
-	//	@Controller + @ResponseBody => return Map => JSON
-	//	@RestController => return String => HTML
-	//	@RestController => return Map => JSON
-	//	@RestController => return 객체(내가만든 클래스) => JSON
-	
+
 	// http://localhost:8080/lesson01/ex01/3
 	@RequestMapping("/3")
 	public String ex01_3() { // return String => HTML
@@ -26,12 +20,12 @@ public class Lesson01Ex01RestController {
 	
 	// http://localhost:8080/lesson01/ex01/4
 	@RequestMapping("/4")
-	public Map<String, String> ex01_4(){
-		Map<String, String > map = new HashMap<>();
-		map.put("김바다", "1111");
-		map.put("봄마다", "1234");
-		map.put("욱이다", "8411");
-		return map; // map -> json
+	public Map<String, String> ex01_4() {
+		Map<String, String> map = new HashMap<>();
+		map.put("김바다", "111");
+		map.put("신송이", "2222");
+		map.put("박진아", "2223");
+		return map; // map -> JSON
 	}
 	
 	// http://localhost:8080/lesson01/ex01/5
@@ -53,6 +47,4 @@ public class Lesson01Ex01RestController {
 		
 		return new ResponseEntity<>(data, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
-	
-
 }
