@@ -7,21 +7,27 @@ import com.example.lesson03.domian.Review;
 
 @Mapper
 public interface ReviewMapper {
-
-	// input:id   output:Review or null
-	public Review selectReviewById(int id);
 	
+	// input: id    output:Review
+	public Review selectReview(int id);
+	
+	// input:Review        output: 성공한 행의 개수(int)
 	public int insertReview(Review review);
-	
-	// @Param 하나의 맵으로 xml에 전송
+
 	public int insertReviewAsField(
-			@Param("storeId") int storeId11111, 
-			@Param("menu") String menu234234, 
-			@Param("userName") String userName234234, 
-			@Param("point") Double point234324, 
-			@Param("review") String review234234);
-	
+			// 하나의 map 된 것 => @Param
+			@Param("storeId") int storeId111, 
+			@Param("menu") String menu111, 
+			@Param("userName") String userName111, 
+			@Param("point") Double point111, 
+			@Param("review") String review111);
+
+	// input:id, review     output: 성공한 행의 개수
 	public int updateReviewById(
 			@Param("id") int id, 
-			@Param("review") String review);
+			@Param("review") String review11111111);
+
+	// input:id      output:성공한 행의 개수
+	public int deleteReviewById(int id);
 }
+
