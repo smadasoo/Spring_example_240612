@@ -1,7 +1,6 @@
 package com.example.lesson01;
 
 //일반 java bean
-//데이터 담는곳
 public class Data {
 	// 필드
 	private int id;

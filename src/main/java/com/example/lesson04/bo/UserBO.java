@@ -23,6 +23,6 @@ public class UserBO {
 	// input: X
 	// output: User
 	public User getLatestUser() {
-		return userMapper.selectLatesUser();
+		return userMapper.selectLatestUser();
 	}
 }

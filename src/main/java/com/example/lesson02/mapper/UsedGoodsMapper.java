@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.example.lesson02.domain.UsedGoods;
 
+
 @Mapper
 public interface UsedGoodsMapper {
 

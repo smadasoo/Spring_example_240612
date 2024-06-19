@@ -15,7 +15,7 @@ public class ReviewBO {
 	// input: int id
 	// output: Review
 	public Review getReview(int id) {
-		return reviewMapper.selectReview(id);
+		return reviewMapper.selectReviewById(id);
 	}
 	
 	// input:Review        output: 성공한 행의 개수(int)
