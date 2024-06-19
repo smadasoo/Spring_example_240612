@@ -1,4 +1,4 @@
-package com.example.lesson03.domian;
+package com.example.lesson03.domain;
 
 import java.time.LocalDateTime;
 

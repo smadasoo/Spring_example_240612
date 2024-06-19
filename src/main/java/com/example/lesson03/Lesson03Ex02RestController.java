@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.lesson03.bo.ReviewBO;
-import com.example.lesson03.domian.Review;
+import com.example.lesson03.domain.Review;
 
 @RequestMapping("/lesson03/ex02")
 @RestController

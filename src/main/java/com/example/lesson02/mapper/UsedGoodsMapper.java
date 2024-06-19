@@ -9,7 +9,7 @@ import com.example.lesson02.domain.UsedGoods;
 
 @Mapper
 public interface UsedGoodsMapper {
-
+	
 	// input: (BO로부터 받아옴) X
 	// output: (BO한테 전달) List<UsedGoods>
 	public List<UsedGoods> selectUsedGoodsList();
