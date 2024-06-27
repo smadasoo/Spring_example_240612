@@ -39,7 +39,7 @@
 	
 	<select id="isDuplicationByName" parameterType="string" resultType="boolean">
 		 	SELECT
-		 		COUN(*)
+		 		COUNT(*)
 		 	FROM
 		 		`new_user`
 		 	WHERE
