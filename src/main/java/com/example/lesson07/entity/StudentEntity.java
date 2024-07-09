@@ -17,10 +17,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+
 @ToString // 객체 출력 시 필드 값들이 보인다.
 @AllArgsConstructor // 모든 파라미터 있는 생성자
 @NoArgsConstructor // 파라미터 없는 생승자
-@Builder // setter를 대신해서 내용을 담음
+@Builder(toBuilder = true) // setter를 대신해서 내용을 담음
 @Getter
 @Table(name ="new_student")
 @Entity // 이 객체는 entity이다. BO-JPA-DB
