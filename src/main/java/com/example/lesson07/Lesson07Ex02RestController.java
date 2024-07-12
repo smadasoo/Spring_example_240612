@@ -22,7 +22,7 @@ public class Lesson07Ex02RestController {
 	@GetMapping("/select1")
 	public List<StudentEntity> select1() {
 		// 1) 전체 조회(기본으로 제공됨)
-		//return studentRepository.findAll();
+//		return studentRepository.findAll();
 		
 		// 2) id 기준 내림차순 전체 조회 
 		//return studentRepository.findAllByOrderByIdDesc();
